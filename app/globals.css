@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0;
+  background-color: #380670;
+  margin: 0;
+  padding: 0;
+  padding-left: 5rem;
+  background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #6a0dad, #4b0082);
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-out;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #7805e4, #6a0dad);
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #7b1fa2, #5e1e7e);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sign-in-button {
+  background: linear-gradient(135deg, #4a90e2, #007aff);
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sign-in-button:hover {
+  background: linear-gradient(135deg, #007aff, #005bb5);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.text
+{
+  animation: fadeIn 1s ease-out;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
